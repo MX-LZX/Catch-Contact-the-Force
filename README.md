@@ -8,9 +8,7 @@ If you need the dataset, please contact me at: 936915881mxlzy@gmail.com
 Inference only
 If you only want to run inference, everything becomes simple. Just set up the required environment and run:
 
-```python evaluate.py
-   # or
-   python3 evaluate.py```
+```python evaluate.py or python3 evaluate.py```
 
 
 This will generate the corresponding prediction tables and plots in the current directory.
