@@ -8,9 +8,9 @@ If you need the dataset, please contact me at: 936915881mxlzy@gmail.com
 Inference only
 If you only want to run inference, everything becomes simple. Just set up the required environment and run:
 
-python evaluate.py
-# or
-python3 evaluate.py
+```python evaluate.py
+   # or
+   python3 evaluate.py```
 
 
 This will generate the corresponding prediction tables and plots in the current directory.
@@ -18,7 +18,7 @@ This will generate the corresponding prediction tables and plots in the current 
 Real-time inference with the CtF foot-end sensor
 If you are lucky enough to own a CtF multi-axis foot-end sensor, simply plug it into your personal PC via a USB 2.0 port, and run:
 
-python serial_inference.py --port COMxxx --baud 115200 --print-hz 25 --csv pred.csv
+```python serial_inference.py --port COMxxx --baud 115200 --print-hz 25 --csv pred.csv```
 
 
 This will display real-time predictions of contact point and contact force in the terminal, while saving results to pred.csv.
