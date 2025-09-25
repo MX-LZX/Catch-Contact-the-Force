@@ -18,7 +18,7 @@ Setup
 
 Install the required Python environment and dependencies listed in the project.
 
-Inference Only
+### Inference Only：
 
 To predict directly from raw data:
 
@@ -29,7 +29,7 @@ To validate with the real sensor via serial port:
 
 ```python serial_inference.py --port COMxxx --baud 115200 --print-hz 25 --csv pred.csv```
 
-Training Your Own Model
+### Training Your Own Model：
 
 Use a 3-axis force/torque sensor as the ground truth to calibrate your CtF foot-end sensor.
 
