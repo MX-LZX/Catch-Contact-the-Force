@@ -1,31 +1,62 @@
 # Catch-Contact-the-Force
 A Multi-Contact-Point, Multi-Axis Foot-End Force Sensor for Legged Robots Magnetic-Hall Sensing via Spring Deformation
 
-
 ## How to use:
-I sincerely hope that my project can be widely known and that everyone can use the CtF foot-end sensor for their quadruped robots. However, the 200k-sample dataset is too large to be uploaded to GitHub.
-If you need the dataset, please contact me at: 936915881mxlzy@gmail.com
- to request access.
+Repository Structure
 
-Inference only
-If you only want to run inference, everything becomes simple. Just set up the required environment and run:
+physics/: Contains multiple physics-informed constraints for the PINN module
 
-```python evaluate.py or python3 evaluate.py```
+models/: Stores MLP model definitions and parameters
+
+data_utils/: Holds raw data (12-channel Hall signals + contact point (x,y) + contact forces (fx, fy, fz)) and preprocessing scripts
+
+data/: Contains processed datasets
+
+checkpoints/: Stores pre-trained minimal models and loss curve figures
+
+Setup
+
+Install the required Python environment and dependencies listed in the project.
+
+Inference Only
+
+To predict directly from raw data:
+
+```python evaluate.py```
 
 
-This will generate the corresponding prediction tables and plots in the current directory.
-
-Real-time inference with the CtF foot-end sensor
-If you are lucky enough to own a CtF multi-axis foot-end sensor, simply plug it into your personal PC via a USB 2.0 port, and run:
+To validate with the real sensor via serial port:
 
 ```python serial_inference.py --port COMxxx --baud 115200 --print-hz 25 --csv pred.csv```
 
+Training Your Own Model
 
-This will display real-time predictions of contact point and contact force in the terminal, while saving results to pred.csv.
+Use a 3-axis force/torque sensor as the ground truth to calibrate your CtF foot-end sensor.
 
-Training
-If you intend to perform training, please note this is a major undertaking. You will need at least a commercial 3D force sensor or a robotic arm equipped with a 3D force sensor, and you must collect large amounts of real-time data for calibration and learning.
+Collect synchronized datasets: 12-channel Hall signals + contact point (x,y) + 3-axis forces (fx, fy, fz).
 
+Insert the data into data_utils/data.xlsx.
+
+Run preprocessing scripts:
+
+```python Add_time_sequence.py```
+```python convert_excel_dataset.py```
+
+
+These will apply time-series formatting and generate .npy datasets.
+
+Return to the root directory and start training:
+
+```python train.py```
+
+
+⚠️ Important: Make sure to back up your best_ema.pth file beforehand—each new training run will overwrite it.
+
+## Notes
+
+Hardware used for training: V100 16GB / RTX 3080 10GB
+
+Training time: ~10 minutes for an initial dataset of ~20M samples
 
 ## License
 Code is licensed under the **PolyForm Noncommercial License 1.0.0**.
