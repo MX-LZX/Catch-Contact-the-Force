@@ -24,6 +24,16 @@ This will display real-time predictions of contact point and contact force in th
 Training
 If you intend to perform training, please note this is a major undertaking. You will need at least a commercial 3D force sensor or a robotic arm equipped with a 3D force sensor, and you must collect large amounts of real-time data for calibration and learning.
 
+##PCB
+<p align = "center">
+<img src="Pic/PCB.png" width = "430" height = "260" border="5" />
+</p>
+
+##Structure
+<p align = "center">
+<img src="Pic/Structure.png" width = "430" height = "260" border="5" />
+</p>
+
 ## License
 Code is licensed under the **PolyForm Noncommercial License 1.0.0**.
 Noncommercial use only; commercial use requires a separate license from the author.
