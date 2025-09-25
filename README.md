@@ -1,5 +1,10 @@
 # Catch-Contact-the-Force
 A Multi-Contact-Point, Multi-Axis Foot-End Force Sensor for Legged Robots Magnetic-Hall Sensing via Spring Deformation
+
+<p align = "center">
+<img src="Pic/Abstract.jpg" width = "430" height = "260" border="5" />
+</p>
+
 ## How to use:
 I sincerely hope that my project can be widely known and that everyone can use the CtF foot-end sensor for their quadruped robots. However, the 200k-sample dataset is too large to be uploaded to GitHub.
 If you need the dataset, please contact me at: 936915881mxlzy@gmail.com
