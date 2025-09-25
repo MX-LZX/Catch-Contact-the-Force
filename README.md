@@ -5,36 +5,36 @@ A Multi-Contact-Point, Multi-Axis Foot-End Force Sensor for Legged Robots Magnet
 <img src="Pic/Abstract.jpg" width = "430" height = "400" border="5" />
 </p>
 
-## How to use:
-I sincerely hope that my project can be widely known and that everyone can use the CtF foot-end sensor for their quadruped robots. However, the 200k-sample dataset is too large to be uploaded to GitHub.
-If you need the dataset, please contact me at: 936915881mxlzy@gmail.com
- to request access.
+## Usage Instructions
 
-Inference only
-If you only want to run inference, everything becomes simple. Just set up the required environment and run:
+I sincerely hope the CtF Foot-End Multi-Dimensional Force Sensor can reach a wide audience and help anyone in need of high-precision foot-ground contact detection or multi-axis force sensing—without being limited by the high cost of traditional strain-gauge-based sensors.
 
-```python evaluate.py or python3 evaluate.py```
+This repository includes:
 
+Hardware: 3D models, titanium spring machining parameters, and material specifications;
 
-This will generate the corresponding prediction tables and plots in the current directory.
+Embedded PCB: Based on RP2040 + MLX90393, designed in LCSC EDA (an Altium Designer version will be provided in future updates);
 
-Real-time inference with the CtF foot-end sensor
-If you are lucky enough to own a CtF multi-axis foot-end sensor, simply plug it into your personal PC via a USB 2.0 port, and run:
+Embedded Firmware: For sensor data acquisition and transmission;
 
-```python serial_inference.py --port COMxxx --baud 115200 --print-hz 25 --csv pred.csv```
+PINN + MLP Algorithm Code: Runs on a personal PC for multi-axis force and contact-point estimation.
 
+## How to Use
 
-This will display real-time predictions of contact point and contact force in the terminal, while saving results to pred.csv.
+Hardware and PCB design files are provided in their respective folders;
 
-Training
-If you intend to perform training, please note this is a major undertaking. You will need at least a commercial 3D force sensor or a robotic arm equipped with a 3D force sensor, and you must collect large amounts of real-time data for calibration and learning.
+Embedded firmware can be directly flashed to the RP2040;
 
-##PCB
+Instructions for running the PINN + MLP algorithm are provided in a dedicated documentation file.
+
+If you have any questions, feel free to contact me at: 936915881mxlzy@gmail.com
+
+## PCB
 <p align = "center">
 <img src="Pic/PCB.png" width = "430" height = "260" border="5" />
 </p>
 
-##Structure
+## Structure
 <p align = "center">
 <img src="Pic/Structure.png" width = "430" height = "260" border="5" />
 </p>
