@@ -13,7 +13,7 @@ This repository includes:
 
 Hardware: 3D models, titanium spring machining parameters, and material specifications;
 
-Embedded PCB: Based on RP2040 + MLX90393, designed in LCSC EDA (an Altium Designer version will be provided in future updates);
+Embedded PCB: Based on RP2040/RP2350A + MLX90393, designed in LCSC EDA (an Altium Designer version will be provided in future updates);
 
 Embedded Firmware: For sensor data acquisition and transmission;
 
