@@ -2,7 +2,7 @@
 A Multi-Contact-Point, Multi-Axis Foot-End Force Sensor for Legged Robots Magnetic-Hall Sensing via Spring Deformation
 
 <p align = "center">
-<img src="Pic/Abstract.jpg" width = "430" height = "400" border="5" />
+<img src="6.Pic/Abstract.jpg" width = "430" height = "400" border="5" />
 </p>
 
 ## Usage Instructions
@@ -31,12 +31,12 @@ If you have any questions, feel free to contact me at: 936915881mxlzy@gmail.com
 
 ## PCB
 <p align = "center">
-<img src="Pic/PCB.png" width = "430" height = "260" border="5" />
+<img src="6.Pic/PCB.png" width = "430" height = "260" border="5" />
 </p>
 
 ## Structure
 <p align = "center">
-<img src="Pic/Structure.png" width = "430" height = "260" border="5" />
+<img src="6.Pic/Structure.png" width = "430" height = "260" border="5" />
 </p>
 
 ## License
