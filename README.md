@@ -5,6 +5,21 @@ A Multi-Contact-Point, Multi-Axis Foot-End Force Sensor for Legged Robots Magnet
 <img src="6.Pic/Abstract.jpg" width = "430" height = "400" border="5" />
 </p>
 
+## Publications
+
+If you use this work in an academic context, please consider citing the following publications:
+
+    @article{meng2025ctf,
+      title= {CtF: A Multi-Contact, Multi-Axis Spring--Hall Foot Sensor with Physics-Guided Learning for Legged Robots},
+      author       = {Meng, Xin and Lu, Jianning and Ma, Wangjie},
+      journal      = {IEEE Sensors Journal},
+      year         = {2025},
+      publisher    = {IEEE},
+      doi          = {10.1109/JSEN.2025.3622594},
+      note         = {Manuscript ID: Sensors-96924-2025, Published in Early Access on IEEE Xplore}
+    }
+
+
 ## Usage Instructions
 
 I sincerely hope the CtF Foot-End Multi-Dimensional Force Sensor can reach a wide audience and help anyone in need of high-precision foot-ground contact detection or multi-axis force sensing—without being limited by the high cost of traditional strain-gauge-based sensors.
